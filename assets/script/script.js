@@ -45,6 +45,7 @@ $(document).ready(function(){
 
     /* ================== Progress Bar ================== */
 
+    alert("Website");
 
    $(window).on("scroll", function(){
     if($(window).scrollTop() + $(window).height() - 500 >= $(".my-resume").offset().top){
