@@ -46,21 +46,6 @@ $(document).ready(function(){
     /* ================== Progress Bar ================== */
 
 
-   $(window).on("scroll", function(){
-    if($(window).scrollTop() + $(window).height() - 500 >= $(".my-resume").offset().top){
-
-        
-        var barList = $.map($('.bar'), function(el) {
-            return {name: $(el).data('name'), value: $(el).data('value')}
-       });
-       for (let i = 0; i < barList.length; i++) {
-        $(".bar[data-name="+barList[i].name+"]").animate({
-            width:barList[i].value+"%"
-        } ,1000);
-           
-       }
-    }
-  })
 
 
 
